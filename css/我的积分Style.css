@@ -1,0 +1,185 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+.containBox{
+	width:100%;
+	height:100%;
+}
+.title{
+	width:70%;
+	height:100px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	clear: both;
+	box-shadow: 5px 5px 5px gainsboro;
+}
+.content{
+	width:70%;
+	/*height:320px;*/
+	margin: 0 auto;
+}
+.title img{
+	width:20%;
+	height:100px;
+	float:left;
+}
+.title ul{
+	width:100%;
+	height:inherit;
+}
+.title ul li a{
+	display: inline-block;
+	float:left;
+	width:20%;
+	height:inherit;
+	font-size: 20px;
+	line-height: 100px;
+	margin-left: 30px;
+	text-align: center;
+	color: black;
+}
+.title ul li a:hover{
+	border-bottom: 1px solid #ffbb77;
+	color: #ffbb77;
+}
+.contentTop{
+	/*width: 100%;*/
+	height:218px;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 5px gainsboro;
+}
+.contentTop .left{
+	box-shadow: 5px 5px 5px gainsboro;
+	width:20%;
+	float:left;
+	height: inherit;
+	text-align: center;
+}
+.contentTop .left>input{
+	margin-top: 20%;
+	background: #FFA042;
+	color: white;
+	padding:20px 38px;
+	border-radius: 5px;
+}
+.contentTop .left p{
+	margin-top: 10px;
+	font-size: 20px;
+}
+.contentTop .left p .day{
+	color: #FFA042;
+}
+.containBox .lunboBox img{
+	width:500px;
+}
+.containBox .lunboBox{
+	/*width: 747px;*/
+	text-align: center;
+	height:218px;
+	float: left;
+	margin-left: 20px;
+	box-shadow: 5px 5px 5px gainsboro;
+	margin-bottom: 10px;
+}
+.contentMiddle{
+	width:100%;
+	height:320px;
+	clear: left;
+	position: relative;
+	box-shadow: 5px 5px 5px gainsboro;
+}
+.contentMiddle .contentTitle,.contentBottom .contentTitle{
+	width:100%;
+	height:40px;
+	line-height: 40px;
+}
+.contentMiddle .contentTitle span,.contentBottom .contentTitle span{
+	font-size: 20px;
+}
+.contentMiddle .contentTitle .total{
+	font-size: 25px;
+	border-bottom: 1px solid gainsboro;
+}
+.contentMiddle .jifenBox{
+	width:30%;
+	float:left;
+	color: gray;
+}
+.contentMiddle .jifenBox p #grades{
+	font-weight: bold;
+	
+	font-size: 30px;
+}
+.contentMiddle .jifenBox .p01{
+	position: absolute;
+	font-size: 26px;
+	top:30%;
+	left:8%;
+}
+.contentMiddle .jifenBox .p001{
+	text-align: center;
+	position: absolute;
+	font-size: 20px;
+	top:54%;
+	left:4%;
+}
+.contentMiddle .jifenBox .p02{
+	position: absolute;
+	font-size: 26px;
+	top:30%;
+	left:38%;
+}
+.contentMiddle .jifenBox .p002{
+	text-align: center;
+	position: absolute;
+	font-size: 20px;
+	top:54%;
+	left:34%;
+}
+.contentMiddle .jifenBox .p03{
+	position: absolute;
+	font-size: 26px;
+	top:30%;
+	left:68%;
+}
+.contentMiddle .jifenBox .p003{
+	text-align: center;
+	position: absolute;
+	font-size: 20px;
+	top:54%;
+	left:62%;
+}
+.contentBottom{
+	clear: left;
+	height:320px;
+	margin-top: 30px;
+	box-shadow: 5px 5px 5px gainsboro;
+}
+.contentBottom .contentTitle>*{
+	float: left;
+}
+.contentBottom .contentTitle ul{
+	width:60%;
+	margin-bottom: 30px;
+}
+.contentBottom .contentTitle ul li a{
+	display: inline-block;
+	float:left;
+	width:20%;
+	font-size: 20px;
+	text-align: center;
+	color: black;
+}
+.contentBottom .contentTitle ul li a:hover{
+	color: #97cbff;
+	border-bottom: 1px solid #97CBFF;
+}

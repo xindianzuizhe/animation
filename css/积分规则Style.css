@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+.containBox{
+	width:100%;
+	height:100%;
+}
+.title{
+	width:60%;
+	height:100px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	clear: both;
+	box-shadow: 5px 5px 5px gainsboro;
+}
+.title img{
+	width:20%;
+	height:100px;
+	float:left;
+}
+.title ul{
+	width:100%;
+	height:inherit;
+}
+.title ul li a{
+	display: inline-block;
+	float:left;
+	width:20%;
+	height:inherit;
+	font-size: 20px;
+	line-height: 100px;
+	margin-left: 30px;
+	text-align: center;
+	color: black;
+}
+.title ul li a:hover{
+	border-bottom: 1px solid #ffbb77;
+	color: #ffbb77;
+}
+.content,.bottom{
+	width:60%;
+	margin: 0 auto;
+	background:#f0f0f0;
+	box-shadow: 5px 5px 5px gainsboro;
+}
+.content .textBox span{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.content .textBox p{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.content .textBox{
+	margin-bottom: 60px;
+}
+.content .middleTableBox{
+	height:166px;
+}
+table{
+	width:98%;
+	border:2px solid gainsboro;
+	border-collapse: collapse;
+	margin-left: 10px;
+	text-align: center;
+}
+td,th{
+	border:2px solid gainsboro;
+	padding:8px 14px;
+}
+.head{
+	background: gainsboro;
+}
+.head th{
+	padding:8px 20px;
+}
+.content .bottomTableBox{
+	height:240px;
+	margin-top: 60px;
+}
+.content .bottomTableBox span{
+	margin-left: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.content .bottomTableBox table{
+	width:50%;
+	margin-top: 10px;
+}
+.bottom{
+	text-align: center;
+	color: gainsboro;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}

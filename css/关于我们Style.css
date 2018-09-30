@@ -1,0 +1,41 @@
+.containBox{
+	width:100%;
+	background: url(../img/bg_all.png) no-repeat;
+}
+.titleBar{
+	width:50%;
+	margin: 0 auto;
+	height:221px;
+}
+.titleBar img{
+	height:80%;
+	margin-left:20%;
+}
+.content{
+	width:70%;
+	height:600px;
+	margin: 0 auto;
+}
+.leftContent{
+	width:50%;
+	float:left;
+}
+.leftContent span{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.leftContent p{
+	font-size: 14px;
+	margin-bottom: 10px;
+	margin-bottom: 20px;
+}
+.rightContent{
+	width:100%;
+}
+.rightContent ul{
+	float:left;
+}
+.rightContent ul>li{
+	margin:20px;
+}

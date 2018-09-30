@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/我的积分Style.css"/>
+	</head>
+	<body>
+		<div class="containBox">
+			<div class="title">
+				<img src="img/wode.PNG"/>
+				<ul>
+					<li><a href="积分商城.html">兑换特权</a></li>
+					<li><a href="我的积分.html">我的积分</a></li>
+					<li><a href="积分规则.html">积分规则</a></li>
+				</ul>
+			</div><!--title结束-->
+			<div class="content">
+				<div class="contentTop">
+					<div class="left">
+						<input type="button" value="签到抽奖" />
+						<p>已经连续签到<span class="day">0</span>天</p>
+					</div>
+						<div class="lunboBox">
+						<img id="lunbo"/>
+					</div><!--lunboBox结束-->
+				</div>
+				<div class="contentMiddle">
+					<div class="contentTitle">
+						<img src="img/wode1.PNG"/>
+						<span>昨天获得积分</span>
+						<span class="total">14</span>
+					</div>
+					<div class="jifenBox">
+						<p class="p01"><span id="grades">0</span>分</p>
+						<img src="img/circle.png"/>
+						<div class="p001">
+							<p>5分/小时</p>
+							<p>昨日登录增长</p>
+						</div>
+					</div>
+					<div class="jifenBox">
+						<p class="p02"><span id="grades">0</span>分</p>
+						<img src="img/circle.png"/>
+						<div class="p002">
+							<p>3分/小时</p>
+							<p>昨日搜索增长</p>
+						</div>
+						
+					</div>
+					<div class="jifenBox">
+						<p class="p03"><span id="grades">0</span>分</p>
+						<img src="img/circle.png"/>
+						<div class="p003">
+							<p>1分/小时</p>
+							<p>昨日网页访问增长</p>
+						</div>
+					</div>
+					
+				</div>
+				<div class="contentBottom">
+					<div class="contentTitle">
+						<img src="img/wode2.PNG"/>
+						<span>近十天获得积分详情：</span>
+						<ul>
+							<li><a href="#">在线</a></li>
+							<li><a href="#">搜索</a></li>
+							<li><a href="#">网页访问</a></li>
+						</ul>
+					</div>
+					<img src="img/wode3.PNG"/>
+				</div>
+			</div><!--content结束-->
+		</div><!--containBox结束-->
+		<script type="text/javascript">
+			var arr = [];
+			arr[0] = 'img/banner01.png';
+			arr[1] = 'img/banner02.png';
+			arr[2] = 'img/banner03.jpg';
+			arr[3] = 'img/banner04.jpg';//将图片地址存到数组中去
+			var time; //控制定时器
+			var index=0; //控制数组的下标
+			//console.log(arr.length);
+			function showPic(){ 
+				//console.log(document.getElementById('lunbo').src);
+				document.getElementById('lunbo').src = arr[index];
+				if(index<arr.length){
+					index++;
+				}
+				index = (index+arr.length)%arr.length;
+				//console.log(index);
+				time = setTimeout("showPic()",2000);
+			}
+			showPic();
+		</script>
+	</body>
+</html>

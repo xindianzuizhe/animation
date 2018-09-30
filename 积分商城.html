@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/积分商城Style.css"/>
+	</head>
+	<body>
+		<div class="lunboBox">
+			<img id="lunbo"/>
+		</div><!--lunboBox结束-->
+		<div class="divBox">
+			<div class="left">
+				<div class="title">
+					<img src="img/pptv.png"/>
+					<span>PPTV聚力会员激活码</span>
+				</div>
+				
+				<img src="img/pptv_bg.png"/>
+			</div>
+			<div class="right">
+				<span class='more'>了解更多</span>
+				<img src="img/pptv7.png"/>
+				<img src="img/pptvm.png"/>
+				<span class="tip">500积分</span>
+				<span class="tip">1500积分</span>
+			</div>
+		</div><!--第一个divBox结束-->
+		<div class="divBox">
+			<div class="left">
+				<div class="title">
+					<img src="img/iqy.png"/>
+					<span>爱奇艺VIP激活码</span>
+				</div>
+				
+				<img src="img/iqy_bg.png"/>
+			</div>
+			<div class="right">
+				<span class='more'>了解更多</span>
+				<img src="img/iqyday.png"/>
+				<img src="img/iqymonth.png"/>
+				<span class="tip">500积分</span>
+				<span class="tip">10000积分</span>
+			</div>
+		</div><!--第二个divBox结束-->
+		<div class="divBox">
+			<div class="left">
+				<div class="title">
+					<img src="img/bdc.png"/>
+					<span>百度云会员激活码</span>
+				</div>
+				
+				<img src="img/bdy_bg.png"/>
+			</div>
+			<div class="right">
+				<span class='more'>了解更多</span>
+				<img src="img/bdyone.png"/>
+				<span class="tip3">4000积分</span>
+			</div>
+		</div><!--第三个divBox结束-->
+		<div class="divBox">
+			<div class="left">
+				<div class="title">
+					<img src="img/txt.png"/>
+					<span>百度文库VIP激活码</span>
+				</div>
+				
+				<img src="img/txt_bg.png"/>
+			</div>
+			<div class="right">
+				<span class='more'>了解更多</span>
+				<img src="img/txt_day.png"/>
+				<img src="img/txt_month.png"/>
+				<span class="tip">800积分</span>
+				<span class="tip">4000积分</span>
+			</div>
+		</div><!--第四个divBox结束-->
+		<script type="text/javascript">
+			var arr = [];
+			arr[0] = 'img/banner01.png';
+			arr[1] = 'img/banner02.png';
+			arr[2] = 'img/banner03.jpg';
+			arr[3] = 'img/banner04.jpg';//将图片地址存到数组中去
+			var time; //控制定时器
+			var index=0; //控制数组的下标
+			//console.log(arr.length);
+			function showPic(){ 
+				//console.log(document.getElementById('lunbo').src);
+				document.getElementById('lunbo').src = arr[index];
+				if(index<arr.length){
+					index++;
+				}
+				index = (index+arr.length)%arr.length;
+				//console.log(index);
+				time = setTimeout("showPic()",2000);
+			}
+			showPic();
+		</script>
+	</body>
+</html>
